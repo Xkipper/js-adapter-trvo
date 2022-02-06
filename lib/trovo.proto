@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package trovo.protobuf;
+
+message Roles {
+    string role = 2;
+}
+
+message Decorations {
+    string name = 1;
+}
+
+message Chat {
+    uint64 uid = 1;
+    string id = 2;
+    string from = 3;
+    string text = 5;
+    uint64 timestamp = 6;
+    uint64 type = 7;
+    uint64 unknown = 8;
+    string identifier = 9;
+    string sub = 10;
+    string avatar = 11;
+    string name = 12;
+    repeated Roles role = 13;
+    repeated Decorations decoration = 14;
+    map<string, string> details = 20;
+}
+
+message TrovoMessage {
+    Chat chat = 3;
+    uint64 Field5Timestamp = 5;
+    uint64 Field6Timestamp = 6;
+}

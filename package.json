@@ -1,0 +1,22 @@
+{
+  "name": "trovo-adapter-2022",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "botbuilder": "^4.15.0",
+    "botkit": "^4.10.0",
+    "dotenv": "^16.0.0",
+    "pbf": "^3.2.1",
+    "playwright-chromium": "^1.18.1"
+  },
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib"
+  }
+}
